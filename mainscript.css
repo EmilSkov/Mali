@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+h1 {
+	color: white;
+	font-size: 3em;
+}
+h2 {
+	color: white;
+}
+
+.mali {
+	width: 468px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	width: 468px;
+	height: auto;
+}
+.text1 {
+	position: absolute;
+	animation-name: try-out;
+	animation-fill-mode: both;
+	animation-duration: 3s;
+}
+@keyframes try-out {
+	0% {transform: translate(0px, -150px);
+	opacity: 1;
+	}
+	50% {transform: translate(0px, -115px);
+	opacity: 1;
+	}
+	100% {transform: translate(0px, -115px);
+	opacity: 0;
+	}	
+}
+.text2 {
+	position: absolute;
+	animation-name: mali;
+	animation-fill-mode: both;
+	animation-duration: 5s;
+	animation-delay: 1s;
+}
+@keyframes mali {
+	0% {transform: translate(0px, -150px);
+	opacity: 0;
+	}
+	100% {transform: translate(0px, -115px);
+	opacity: 1;
+	}
+}
+.book {
+	position: absolute;
+	animation-name: book-nu;
+	animation-fill-mode: both;
+	animation-duration: 5s;
+	animation-delay: 1s;
+}
+@keyframes book-nu {
+	0% {transform: translate(300px, -85px);
+	opacity: 0;
+	}
+	100% {transform: translate(300px, -85px);
+	opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+.Banner {
+	width: 320px;
+	height: 100px;
+	background: #DB2A2D;
+	animation-name: red-to-blue;
+	animation-duration: 4s;
+}
+
+@keyframes red-to-blue {
+	0% {background: red;}
+	100% {background: blue;}
+}
+
+.blackbox {
+	animation-name: green-box-move;
+	animation-fill-mode: forwards;
+	transition-timing-function: ease-in;
+	animation-iteration-count: 4;
+	animation-duration: 1s;
+	background:black;
+	width: 30px;
+	height: 30px;
+	top: 20px;
+	left: 20px;
+	position: absolute;
+}
+@keyframes green-box-move {
+	0% {transform: translate(0px, 0px);}
+	100%{transform: translate(250px, 0px);}
+}
