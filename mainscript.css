@@ -1,11 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
 h1 {
-	color: white;
+	color: #926a31;
 	font-size: 3em;
 }
 h2 {
-	color: white;
+	color: #926a31;
+}
+.mali img {
+	width: 468px;
+	height: auto;
+	filter: brightness(65%);
+}
+.text2 img {
+	width: 300px;
+	height: auto;
+	filter: brightness(100%);
 }
 
 .mali {
@@ -14,15 +24,12 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 }
-img {
-	width: 468px;
-	height: auto;
-}
+
 .text1 {
 	position: absolute;
 	animation-name: try-out;
 	animation-fill-mode: both;
-	animation-duration: 3s;
+	animation-duration: 6s;
 }
 @keyframes try-out {
 	0% {transform: translate(0px, -150px);
@@ -40,13 +47,13 @@ img {
 	animation-name: mali;
 	animation-fill-mode: both;
 	animation-duration: 5s;
-	animation-delay: 1s;
+	animation-delay: 4s;
 }
 @keyframes mali {
-	0% {transform: translate(0px, -150px);
+	0% {transform: translate(85px, -100px);
 	opacity: 0;
 	}
-	100% {transform: translate(0px, -115px);
+	100% {transform: translate(85px, -100px);
 	opacity: 1;
 	}
 }
@@ -55,13 +62,13 @@ img {
 	animation-name: book-nu;
 	animation-fill-mode: both;
 	animation-duration: 5s;
-	animation-delay: 1s;
+	animation-delay: 4s;
 }
 @keyframes book-nu {
-	0% {transform: translate(300px, -85px);
+	0% {transform: translate(160px, -50px);
 	opacity: 0;
 	}
-	100% {transform: translate(300px, -85px);
+	100% {transform: translate(160px, -50px);
 	opacity: 1;
 	}
 }
